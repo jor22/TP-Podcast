@@ -1,0 +1,153 @@
+/*
+*
+*    @GRID
+*
+*/
+html{
+    font-family:sans-serif;
+}
+.container {
+    padding: 10px 20px;
+
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* -- Mobile columns -- */
+.col-1 {
+    width: 8.3%;
+}
+.col-11 {
+    width: calc( 8.3% * 11 );
+}
+.col-12 {
+    width: calc( 8.3% * 12 );
+}
+
+
+/*
+*   Common
+*/
+body {
+    margin: 0
+}
+.img-fluid {
+    max-width: 100%;
+}
+.f-right {
+    float: right;
+}
+
+.clipped-background {
+
+}
+
+/*
+*   Navbar
+*/
+h1 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    
+}
+.line-througth{
+    text-decoration: line-through;
+}
+
+.point-color{
+    color: blue;
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+.menu, 
+#menu-toggle,
+#menu-toggle + .col-11 .fa-close,
+#menu-toggle:checked + .col-11 .fa-bars {
+    display: none;
+    position: relative;
+
+}
+
+#menu-toggle:checked +.col-11 + .menu,
+#menu-toggle:checked +.col-11 .fa-close {
+    display: initial;
+}
+
+.menu ul {
+    width: 100%;
+    position: absolute;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    display: block;
+    flex-direction: column;
+    float: right;
+}
+
+
+.menu li:hover {
+    background: #3449ff;
+   
+}
+
+.menu li{
+    border-top: 0;
+    display: block;
+    padding: 15px 20px;
+    text-decoration:  none;
+    color: white;
+    background: #00098b;
+    font-size: small;
+}
+.header-btn:hover{
+    background-image: linear-gradient(to right ,rgb(0, 255, 242),  #00098b);
+    color: #ffffff;
+}
+.header-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;  
+    position: block;
+    background-color:#00F3BB;
+    border: none;
+    font-size: 16px;
+    color: #00043b;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+}
+
+/*
+*  Episodios
+*/
+.episodios .clipped-background {
+
+    background-image: linear-gradient(#3449ff, #00098b);
+    color: #ffffff;
+    padding: 50px 20px;
+    clip-path:polygon(  100% 2% ,
+                        245% 89%,
+                        0% 100% , 
+                        0% 7%  );
+
+     }
