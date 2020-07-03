@@ -9,7 +9,8 @@
 
 .container-fluid{
     padding: 0;
-    }
+    
+}
 
 .row {
     display: flex;
@@ -20,6 +21,13 @@
 /* -- Mobile columns -- */
 .col-1 {
     width: 8.3%;
+}
+
+.col-4 { 
+    width: calc( 8.3% * 4);
+}
+.col-10 {
+    width: calc( 8.3% * 10 );
 }
 .col-11 {
     width: calc( 8.3% * 11 );
@@ -37,7 +45,7 @@ body {
 }
 
 .img-fluid {
-    max-width: 100%;
+    width: 100%;
 }
 
 .f-right {
@@ -48,12 +56,28 @@ body {
 
 }
 
-/*
-*   Navbar
-*/
 h1 {
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 36px;   
+    font-size: 36px;
+    color: #060A24;   
+}
+
+h2 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    margin-bottom: 15px;
+    font-weight: 100;
+    }
+
+h3 {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 36px;
+    color: #060A24; 
+}
+
+p {
+    font-family: 'IBM Plex Mono', monospace;
+    color: #060A24;
 }
 
 .line-througth{
@@ -64,9 +88,9 @@ h1 {
     color: blue;
 }
 
-p {
-    font-family: 'IBM Plex Mono', monospace;
-}
+/*
+*   Navbar
+*/
 
 header label:hover{
     cursor: pointer;
@@ -145,22 +169,95 @@ header label:hover{
                         0% 7%  );
 }
 
-h2 {
-font-family: 'IBM Plex Sans', sans-serif;
-font-size: 36px;
-margin-bottom: 15px;
-font-weight: 100;
-}
-
 .widgets-container {
     margin:auto;
     padding: 10px 10px,
 }
     
-.widgets {   /*arreglar margen derecho */
+.widgets {  
     width: 100%;
     margin-bottom: 10px;
     margin-right: 0; 
-    padding: ;
+    padding:0 ;
 }
  
+
+/*
+*   De dónde venimos
+*/
+
+.phone-container {
+    position: relative;
+    top:-50px;
+}
+
+.phone {
+    width: 100%;
+}
+
+/*
+* Invitadas
+*/
+.invitadas-images{
+    width: 100%;
+    height: 243px;
+    margin-top:-5px;
+}
+
+/*
+*   Temas  
+*/
+
+.temas {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: #060A24 ;
+    text-align: center;
+}
+
+
+.icon {
+    margin-left: 33%;
+}
+
+/*
+*   novedades 
+*/
+
+.novedades {
+    background-image: linear-gradient(#3449ff, #00098b);
+    color: #ffffff;
+    padding: 50px 20px;
+    clip-path:polygon(  100% 2% ,
+                        100% 100%,
+                        0% 100% , 
+                        0% 21%  );
+    text-align: center;
+}
+
+.end-btn {
+    font-family: 'IBM Plex Mono', monospace;
+    font-weight: 600;  
+    position: block;
+    background-color:#00F3BB;
+    border: none;
+    font-size: 16px;
+    color: #00043b;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+    width: 100%;
+}
+
+.end-btn:hover {
+    background-image: linear-gradient(to right ,rgb(0, 255, 242),  #00098b);
+    color: #ffffff;
+}
+
+footer {
+text-align: center;
+}
