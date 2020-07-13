@@ -234,7 +234,9 @@ header p {
 /*
 *   Temas  
 */
-
+.temas p br {
+    display: none;
+}
 .temas {
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 24px;
@@ -293,8 +295,19 @@ header p {
     color: #ffffff;
 }
 
-footer {
-text-align: center;
+ /*
+*   Footer
+*/
+footer .row {
+  justify-content: center;
+}
+
+footer .f-right {
+    float: initial;
+}
+
+footer{
+ text-align: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -477,12 +490,22 @@ text-align: center;
         display: none;
     }
 
+    .temas p br {
+        display: initial;
+    }
+
 
     .icon {
         margin: 0px;
     }
 
     /* novedades */
+
+
+   .novedades {
+    padding: 213px 0px 150px 0px;
+    clip-path: polygon( 100% 1% , 100% 100%, 0% 100% , 0% 30% );
+    } 
 
     .end-btn {
         width: 24%;
@@ -498,6 +521,10 @@ text-align: center;
     footer .d-col-3 {
         margin: 0;
     
+    }
+
+    footer .f-right{
+        float: right;
     }
 
 
