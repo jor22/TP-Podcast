@@ -13,39 +13,44 @@
     <body>
       <header>
             <nav>
-                <div class="container">
-                <div class="row">
-                        <div class="col-1">
-                            <img src="./images/logo.svg" alt="" class="img-fluid" />
+                <div class="container-fluid desktop-small-container">
+                 <div class="row">
+                        <div class="col-1 d-col-1 ">
+                            <img src="./images/logo.svg" alt="" class="img-fluid    logo " />
                         </div>
 
                         <input type="checkbox" name="" id="menu-toggle" />
 
-                        <div class="col-11">
+                        <div class="col-11  ">
                             <label for="menu-toggle">
-                                <i class="fa fa-bars f-right"></i>
-                                <i class="fa fa-close f-right"></i>
+                                <i class="fa fa-bars f-right padding-navbar"></i>
+                                <i class="fa fa-close f-right padding-navbar"></i>
                             </label>
                         </div>
 
-                        <div class="col-12 menu">
-                            <ul>
+                        <div class="col-12 menu d-col-11 desktop-menu   ">
+                            <ul >
                                 <li>EPISODIOS </li>
                                 <li>NOSOTROS </li>
-                                <li>ETREVISTAS</li>
+                                <li>ENTREVISTAS</li>
                                 <li>TÓPICOS </li>
                             </ul>
                         </div>
 
-                    <div class="col-12 hero-banner">
+                     <div class="col-12 container  desktop-container">
                         <h1>
                             Hello <span class="line-througth">World</span> <br>
                             pale blue dot <span class="point-color">.</span>
                         </h1>
                         <p>
                             Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
+                        </p >
+                        <p class= "desktop-p" >
+                             El portal de podcasts que explora el mundo de la programación y<br>la tecnología. Nuevos episodios, todos los jueves cada 15 días.
                         </p>
-                        <button  class="header-btn"> 
+
+
+                        <button  class="header-btn container"> 
                             CONOCÉ  MÁS
                         </button>
                     </div>
@@ -54,100 +59,130 @@
             </nav>
      </header>
         <main>
-            <section class="episodios">
-                 <div class= "container-fluid  clipped-background">
+            <section class="episodios ">
+                 <div class= "container-fluid  clipped-background  ">
                      <h2>Episodios</h2>
-                     <div class="row   widgets-container">
+                     <div class="row   widgets-container ">
                          <div class="col-12 widgets ">
-                         <img src="images/embed1_.png" alt="" class="img-fluid" /> 
+                         <img src="images/embed1_.png" alt="" class="img-fluid mobilewidget" /> 
                          </div>
                          <div class="col-12 widgets ">
-                         <img src="images/embed2_.png" alt="" class="img-fluid" />
+                         <img src="images/embed2_.png" alt="" class="img-fluid  mobilewidget" />
                          </div>
                          <div class="col-12 widgets ">
-                         <img src="images/embed3_.png" alt="" class="img-fluid" />
+                         <img src="images/embed3_.png" alt="" class="img-fluid  mobilewidget" />
                          </div>
-                        
+                     </div>
+                     <div class="row desktop-widgets    desktop-widgets-container">
+                        <div class="d-col-6">
+                            <img src="images/embed1.png" alt="" class="desktop-img-fluid desktopwidget  " /> 
+                        </div>
+                        <div class="d-col-6">
+                           <img src="images/embed2.png" alt="" class="desktop-img-fluid desktopwidget " /> 
+                        </div>
+                        <div class="d-col-6">
+                            <img src="images/embed3.png" alt="" class="desktop-img-fluid desktopwidget " /> 
+                        </div>
+                        <div class="d-col-6">
+                            <img src="images/embed4.png" alt="" class="desktop-img-fluid desktopwidget " /> 
+                        </div>   
                      </div>
                  </div>
             </section>
-            <section class="donde-venimos">
-                <div class="phone-container">
-                    <div class="col-10  phone">
-                         <img src="images/phone.png" alt=""  class="img-fluid">
+            <section class="donde-venimos ">
+                <div class= "row  desktop-container " >
+                    <div class="phone-container d-col-6 ">
+                    <div class="col-10 phone">
+                         <img src="images/phone.png" alt=""  class="img-fluid desktop-img-fluid">
                      </div>
-                </div >
-                <div class="container">
+                    </div >
+                    <div class="container  d-col-6">
                     <h3>
-                        De dónde<br>venimos
+                        De dónde <br>venimos
                     </h3>
                     <p>
                         Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.<br>
+                        <br>
                         Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
                     </p>
+                   
+                    </div>
                 </div>
             </section>
-            <section class="invitados">
-                <Div class="container">
+            <section class="invitadas">
+                <Div class="container desktop-container">
                     <h3>
                         Invitadas/os<br> estelares
                     </h3>
                 </Div>
                 <div class="container-fluid ">
-                    <img src="images/grace-hopper.png" alt="grace-hopper" class="invitadas-images">
+                    <img src="images/grace-hopper.png" alt="grace-hopper" class="invitadas-images d-col-4">
                     <img src="images/Katie-Bouman.png"
                     alt="Katie-Bouman"
-                    class="invitadas-images">
-                    <img src="images/Margaret_Hamilton.png" alt="Margaret_Hamilton"class="invitadas-images">
-                    <img src="images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Computer 1950" class="invitadas-images">
-                    <img src="images/Computer operators with an Eniac ÔÇö the worldÔÇÖs first programmable general-purpose computer.png" alt="computer operators" class="invitadas-images">
-                    <img src="images/susan-kare.png" alt="susan-kare" class="invitadas-images">
+                    class="invitadas-images d-col-4 ">
+                    <img src="images/Margaret_Hamilton.png" alt="Margaret_Hamilton"class="invitadas-images d-col-4">
+                    <img src="images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Computer 1950" class="invitadas-images d-col-4">
+                    <img src="images/Computer operators with an Eniac ÔÇö the worldÔÇÖs first programmable general-purpose computer.png" alt="computer operators" class="invitadas-images d-col-4">
+                    <img src="images/susan-kare.png" alt="susan-kare" class="invitadas-images d-col-4">
                 </div>
             </section>
             <section class="temas">
-                <div class="container">
-                    <h3>
+                <div class="container ">
+                    <h3 class="desktop-container">
                         Algunos de<br>nuestros temas 
                     </h3>
-                    <div > 
-                        <div class="col-4 icon">
+                    <div class="row desktop-container">
+
+                        <div class="col-6 icon d-col-3">
                             <img src="images/icon1.svg" alt="">
+                            <p class="col-6 temas"> Trabajo remoto</p>
                         </div>
 
-                        <p class="col-12 temas"> Trabajo remoto</p>
-
-                        <div class="col-4 icon"> 
+                        <div class="col-6 icon d-col-3"> 
                             <img src="images/icon2.svg" alt="">
+                            <p class="col-6 temas">Repensando la programación</p>
                         </div>
 
-                        <p class="col-12 temas">Repensando la programación</p>
+                      
 
-                        <div class="col-4 icon"> 
+                        <div class="col-6 icon d-col-3"> 
                             <img src="images/icon3.svg" alt="">
+                            <p class="col-6 temas"> Bases del código </p>
                         </div>
 
-                        <p class="col-12 temas"> Bases del código </p>
-
-                        <div class="col-4 icon"> 
+                        <div class="col-6 icon d-col-3"> 
                             <img src="images/icon4.svg" alt="">
+                            <p class="col-6 temas">Seguridad informática</p>
                         </div>
-                        <p class="col-12 temas">Seguridad informática</p>
+                       
                     </div>
                 </div >
             </section>
             <section class="novedades">
                 <div class= "container-fluid">
-                    <h2>
-                        ¿Querés las últimas novedades?
-                    </h2>
-                    <button  class="end-btn"> 
-                        ESCUCHÁ LOS EPISODIOS
-                    </button>
+                    <div class="container">
+                        <h2>
+                            ¿Querés las últimas novedades?
+                        </h2>
+                        <button  class="end-btn"> 
+                            ESCUCHÁ LOS EPISODIOS
+                        </button>
+                    </div>
                 </div>
             </section>
         </main>
-        <footer>
-            <p> © 2019— Hello blue pale dot </p>
+        <footer> 
+            <div class="container desktop-small-container row  ">
+                <p> © 2019— Hello blue pale dot </p>
+                <div class=" col-12 d-col-4
+                 social-icons-container">
+                    <i class="fa fa-spotify col-2 d-col-1" aria-hidden="true"></i>
+                    <i class="fa fa-instagram col-2 d-col-1" aria-hidden="true"></i>
+                    <i class="fa fa-twitter col-2 d-col-1 " aria-hidden="true"></i>
+                    <i class="fa fa-facebook col-2 d-col-1" aria-hidden="true"></i>
+                    <i class="fa fa-paper-plane col-2 d-col-1" aria-hidden="true"></i>
+                </div>
+            </div>
         </footer>
     </body>
 </html>

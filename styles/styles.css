@@ -1,10 +1,7 @@
-/*
-*
-*    @GRID
-*
-*/
+
 .container {
     padding: 10px 20px;
+    box-sizing: border-box;
 }
 
 .container-fluid{
@@ -22,9 +19,15 @@
 .col-1 {
     width: 8.3%;
 }
-
+.col-2 {
+    width: calc(8.3% * 2 )
+}
 .col-4 { 
     width: calc( 8.3% * 4);
+}
+
+.col-5 {
+    width: calc(8.3% * 5);
 }
 .col-10 {
     width: calc( 8.3% * 10 );
@@ -52,9 +55,10 @@ body {
     float: right;
 }
 
-.clipped-background {
-
+.desktop-display-none{
+    display: none;
 }
+
 
 h1 {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -91,6 +95,16 @@ p {
 /*
 *   Navbar
 */
+.logo { 
+    max-width: 90%;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.padding-navbar{
+    padding-top: 18px ;
+    padding-right:20px;
+    outline: none;
+}
 
 header label:hover{
     cursor: pointer;
@@ -115,7 +129,7 @@ header label:hover{
     position: absolute;
     margin: 0; 
     list-style-type: none;
-    padding: 0;
+    padding:0;
     display: block;
     flex-direction: column;
 }
@@ -126,7 +140,6 @@ header label:hover{
 }
 
 .menu li{
-    /* border-top: 1px solid  #0000EC;   */
     display: block;
     padding: 15px 20px;
     text-decoration:  none;
@@ -137,6 +150,7 @@ header label:hover{
 .header-btn:hover{
     background-image: linear-gradient(to right ,rgb(0, 255, 242),  #00098b);
     color: #ffffff;
+    border-style: none;
 }
 
 .header-btn {
@@ -145,10 +159,10 @@ header label:hover{
     position: block;
     background-color:#00F3BB;
     border: none;
+    outline: none;
     font-size: 16px;
     color: #00043b;
     padding: 15px;
-    width: 150px;
     text-align: center;
     text-decoration: none;
     overflow: hidden;
@@ -156,6 +170,12 @@ header label:hover{
     width: 100%;
 }
 
+header p {
+    padding-bottom: 25px;
+}
+.desktop-p {
+    display: none;
+}
 /*
 *  Episodios
 */
@@ -163,6 +183,7 @@ header label:hover{
     background-image: linear-gradient(#3449ff, #00098b);
     color: #ffffff;
     padding: 50px 20px;
+    padding-bottom: 125px;
     clip-path:polygon(  100% 2% ,
                         245% 89%,
                         0% 100% , 
@@ -173,22 +194,29 @@ header label:hover{
     margin:auto;
     padding: 10px 10px,
 }
-    
+
 .widgets {  
     width: 100%;
     margin-bottom: 10px;
     margin-right: 0; 
     padding:0 ;
 }
- 
+
+
+.desktopwidget {
+   display: none;
+}
+
 
 /*
 *   De dónde venimos
 */
-
+.donde-venimos h3 {
+    margin-top: -70px;
+}
 .phone-container {
     position: relative;
-    top:-50px;
+    top:-100px;
 }
 
 .phone {
@@ -200,7 +228,6 @@ header label:hover{
 */
 .invitadas-images{
     width: 100%;
-    height: 243px;
     margin-top:-5px;
 }
 
@@ -216,9 +243,12 @@ header label:hover{
     text-align: center;
 }
 
+.temas h3 {
+    text-align: start;
+}
 
 .icon {
-    margin-left: 33%;
+    margin: 0% 20%;
 }
 
 /*
@@ -228,13 +258,17 @@ header label:hover{
 .novedades {
     background-image: linear-gradient(#3449ff, #00098b);
     color: #ffffff;
-    padding: 50px 20px;
+    padding: 50px 0px;
     clip-path:polygon(  100% 2% ,
                         100% 100%,
                         0% 100% , 
                         0% 21%  );
     text-align: center;
 }
+
+.novedades  h2 {
+    padding: 10px 20px;
+} 
 
 .end-btn {
     font-family: 'IBM Plex Mono', monospace;
@@ -260,4 +294,206 @@ header label:hover{
 
 footer {
 text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    /* For desktop: */
+    .d-col-1 {width: 8.33% }
+    .d-col-2 {width:calc(8.33% *  2 );}
+    .d-col-3 {width:calc(8.33% *  3 );}
+    .d-col-4 {width:calc(8.33% *  4 );} 
+    .d-col-5 {width:calc(8.33% *  5 );} 
+    .d-col-6 {width:calc(8.33% *  6 );}   
+    .d-col-7 {width:calc(8.33% *  7 );} 
+    .d-col-8 {width:calc(8.33% *  8 );} 
+    .d-col-9 {width:calc(8.33% *  9 ) ;}
+    .d-col-10 {width:calc(8.33% * 10  );}
+    .d-col-11 {width:calc(8.33% *  11 );}
+    .d-col-12 {width:calc(8.33% * 12  );}
+
+
+    .desktop-container{
+        padding: 1.6% 13.9%;
+    }
+    .desktop-small-container{
+        padding: 0.6%  6.9%  ;
+    }
+     
+
+     /* Header */
+    
+   
+    
+    header label {
+        display: none;
+    }
+    .menu,
+    #menu-toggle,
+    #menu-toggle + .col-11 .fa-close,
+    #menu-toggle:checked + .col-11 .fa-bars {
+    display: none;
+    }
+
+    .col-11{
+        display: none;
+    }
+
+    .desktop-menu {
+        display:block
+    }
+
+    .desktop-menu  ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .desktop-menu li {    
+     color: #060A24;
+     background: #ffffff00;
+    }
+
+    .desktop-menu li:hover {
+        background: #3448ff00;
+        color:#00F3BB;
+        cursor: pointer;
+    }
+
+    .desktop-menu li:active {
+        color: #060a2481;
+    }
+
+    .logo { 
+        max-width: 40%;
+    }
+
+    h1  br {
+        display: none;
+    }
+
+    .header-btn{
+        width: 33%;
+    }
+
+    .desktop-p{
+        display: block;
+    }
+
+    header p {
+        display: none;
+    }
+
+     /* Episodios  */
+
+    .episodios h2 {
+        margin: 0;
+        padding: 0.7%  13.9% ;
+    } 
+
+    div  .widgets-container {
+        display: none;
+    } 
+ 
+    .desktop-img-fluid {
+        width: 100%;
+        max-width: 90%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .mobilewidget {
+        display: none;
+    }
+    .desktopwidget {
+       display: block;
+    }
+
+    .desktop-widgets-container {
+        margin: auto ;
+        padding: 0.7%  6.9% ;
+    }
+
+   .episodios .clipped-background {
+    padding-top: 150px;
+    padding-bottom: 150px;
+    clip-path: polygon( 100% 0% , 245% 70%, 0% 100% , 0% 14% );}
+
+
+     /* de donde venimos */
+
+     .donde-venimos {
+         width: auto;
+         height: 650px;
+     }
+
+
+     .donde-venimos h3 br {
+         display: none;
+     }
+
+
+     .donde-venimos .desktop-container {
+      width: auto;
+     }
+ 
+
+     .donde-venimos .container {
+         padding: 100px 0px 0px 0px;
+        
+     }
+
+
+     .phone-container {
+        top:-170px;
+    }
+
+
+    /* Invitadas  */
+
+    .invitadas h3 br {
+        display: none;
+    }
+
+    .invitadas-images{ 
+        margin-top: -5px ;
+        margin-left: -5px;
+        margin-right: 0px;
+    }
+
+
+    /* Temas */
+
+    .temas h3 br {
+        display: none;
+    }
+
+
+    .icon {
+        margin: 0px;
+    }
+
+    /* novedades */
+
+    .end-btn {
+        width: 24%;
+    }
+
+
+    /* Footer */
+
+
+    .social-icons-container {
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 0 0 20px;
+        padding-left: 45% ;
+       
+    }
+
+
+
+
+
+
+
 }
