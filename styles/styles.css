@@ -1,4 +1,4 @@
-/*
+/* 
 
 
 *   for Mobile:
@@ -21,6 +21,7 @@ iframe {
 .container-fluid {
     padding: 0;    
 }
+
 
 .row {
     display: flex;
@@ -73,15 +74,11 @@ body {
 }
 
 .img-fluid {
-    width: 100%;
+    max-width: 100%;
 }
 
 .f-right {
     float: right;
-}
-
-.desktop-display-none {
-    display: none;
 }
 
 
@@ -96,7 +93,7 @@ h2 {
     font-size: 36px;
     margin-bottom: 15px;
     font-weight: 100;
-    }
+}
 
 h3 {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -127,8 +124,8 @@ p {
 */
 
 .logo { 
-    max-width: 100%;
-}
+    width: 100%;
+} 
 
 .padding-navbar {
     padding-top: 10px ;
@@ -226,20 +223,13 @@ header p {
                         0% 7%  );
 }
 
-.widgets-container {
-    margin:auto;
-    padding: 10px 10px,
-}
-
-.widgets {  
+.responsive-iframe {
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     width: 100%;
-    margin-bottom: 10px;
-    margin-right: 0; 
-    padding:0 ;
-}
-
-.desktopwidget {
-   display: none;
+    height: 100%;
 }
 
 /*
@@ -369,7 +359,7 @@ header p {
 */
 
 footer .row {
-  justify-content: center;
+    justify-content: center;
 }
 
 footer .f-right {
@@ -377,7 +367,7 @@ footer .f-right {
 }
 
 footer {
- text-align: center;
+    text-align: center;
 }
 
 
@@ -421,7 +411,7 @@ footer {
     #menu-toggle,
     #menu-toggle + .col-11 .fa-close,
     #menu-toggle:checked + .col-11 .fa-bars {
-    display: none;
+        display: none;
     }
 
     .col-11 {
@@ -440,8 +430,8 @@ footer {
     }
 
     .desktop-menu li {    
-     color: #060A24;
-     background: #ffffff00;
+        color: #060A24;
+        background: #ffffff00;
     }
 
     .desktop-menu li:hover {
@@ -476,45 +466,29 @@ footer {
 
     /*---------------     Episodios     ---------------*/
 
+   
+    .embed-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+    }
+
     .embed-width {
-        width: 46.5%;
+        width: 39.33%;
     }
 
-    .embed1 {
-        padding-top:   6px;
-        padding-right:  44px;
-        padding-bottom: 44px;
+    .embed-left {
+        padding: 0.6%  4%  5%  6.9% 
     }
 
-    .embed2 {
-        padding-top: 6px;
-        padding-left: 44px;
-        padding-bottom: 44px;
-        margin: 0;
+    .embed-right {
+        padding: 0.6%  6.9%  0  3.5%;
     }
 
-    .embed3 {
-        padding-bottom:64px ;
-        padding-top: 44px;
-        padding-right: 44px ;
-    }
-
-    .embed4 {
-        padding-top: 44px ;
-        padding-left: 44px ;
-        padding-bottom:64px ;
-    }
-
-    
     .episodios h2 {
         margin: 0;
         padding: 0 60px;
     } 
-
-    div  .widgets-container {
-        display: none;
-    }    
-
 
     .episodios .clipped-background {
      padding-top: 150px;
@@ -544,9 +518,8 @@ footer {
         
     }
 
-
     .phone-container {
-        top:-140px;
+        top: -190px;
     }
 
 
