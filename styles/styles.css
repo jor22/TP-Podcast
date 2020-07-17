@@ -8,10 +8,13 @@
 
 img {
     max-width: 100%; 
- }
+}
 
 iframe {
     max-width: 100%;
+    width: 100%;
+    height: 232px;       /* cambiar a vw  */
+    border: 0;
 }
 
 .container {
@@ -21,7 +24,6 @@ iframe {
 .container-fluid {
     padding: 0;    
 }
-
 
 .row {
     display: flex;
@@ -124,11 +126,11 @@ p {
 */
 
 .logo { 
-    width: 100%;
+    width: 99%;
 } 
 
 .padding-navbar {
-    padding-top: 10px ;
+    padding-top: 2%;
     outline: none;
 }
 
@@ -160,40 +162,58 @@ header label:hover{
     flex-direction: column;
 }
 
-.menu li:hover {
+.menu a:hover {
     background: #3449ff; 
 }
 
-.menu li {
+li a{
     display: block;
     padding: 15px 20px;
     text-decoration:  none;
+    font-weight: 200;
     color: white;
     background: #0000EC;
     font-family: 'IBM Plex Mono', monospace; 
 }
 
-.header-btn:hover {
+ .btn:hover {
     background-image: linear-gradient(to right ,rgb(0, 255, 242),  #00098b);
-    color: #ffffff;
     border-style: none;
+    color: #ffffff;
+}
+.btn a:hover {
+    color:#ffffff;
 }
 
-.header-btn {
-    font-family: 'IBM Plex Mono', monospace;
-    font-weight: 600;  
-    position: block;
-    background-color:#00F3BB;
-    border: none;
-    outline: none;
-    font-size: 16px;
-    color: #00043b;
-    padding: 15px;
-    text-align: center;
-    text-decoration: none;
-    overflow: hidden;
-    cursor: pointer;
+.btn {
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #00F3BB;
     width: 100%;
+    margin-bottom: 24px;
+    height: 8vh;
+    border-radius: 3px;
+}
+
+
+.btn a{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 16px;
+  color: #060A24;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 56px;
+  text-decoration: none;
+  font-weight: 600;
+  width: 100%;
 }
 
 header p {
@@ -212,15 +232,16 @@ header p {
 
 */
 
-.episodios .clipped-background {
+#episodios .clipped-background {
     background-image: linear-gradient(#3449ff, #00098b);
     color: #ffffff;
-    padding: 50px 20px;
-    padding-bottom: 125px;
-    clip-path:polygon(  100% 2% ,
-                        245% 89%,
+    padding: 40px 20px;
+    padding-top: 10%;
+    padding-bottom: 28%;
+    clip-path: polygon( 100% 1% ,
+                        245% 89%, 
                         0% 100% , 
-                        0% 7%  );
+                        0% 4% );
 }
 
 .responsive-iframe {
@@ -229,7 +250,8 @@ header p {
     bottom: 0;
     right: 0;
     width: 100%;
-    height: 100%;
+    height: 95%;
+    padding-bottom: 10px;
 }
 
 /*
@@ -357,7 +379,9 @@ header p {
 
 
 */
-
+footer {
+    text-align: center;
+}
 footer .row {
     justify-content: center;
 }
@@ -365,9 +389,24 @@ footer .row {
 footer .f-right {
     float: initial;
 }
+footer ul {
+    display: -webkit-box;
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    list-style: none;
+}
 
-footer {
-    text-align: center;
+footer li {
+    background:#3448ff00;
+}
+
+footer  a  {
+    font-size: 18px;
+    background:#3448ff00;
+    color: #060A24;
+    letter-spacing: 0;
+    line-height: 28px;
 }
 
 
@@ -429,19 +468,25 @@ footer {
         padding: 0 6%;
     }
 
-    .desktop-menu li {    
+    .menu li:hover {
+        background: #3448ff00; 
+    }
+
+    .desktop-menu a{    
         color: #060A24;
         background: #ffffff00;
     }
 
-    .desktop-menu li:hover {
+    .desktop-menu a:hover {
         background: #3448ff00;
         color:#00F3BB;
+        text-decoration: line-through;
         cursor: pointer;
     }
 
-    .desktop-menu li:active {
+    .desktop-menu a:active {
         color: #060a2481;
+        text-decoration: line-through;
     }
 
     .logo { 
@@ -485,12 +530,12 @@ footer {
         padding: 0.6%  6.9%  0  3.5%;
     }
 
-    .episodios h2 {
+    #episodios h2 {
         margin: 0;
         padding: 0 60px;
     } 
 
-    .episodios .clipped-background {
+    #episodios .clipped-background {
      padding-top: 150px;
      padding-bottom: 150px;
      clip-path: polygon( 100% 0% , 245% 70%, 0% 100% , 0% 14% );
@@ -500,7 +545,7 @@ footer {
 
     .donde-venimos {
          width: auto;
-         height: 700px;
+         height: 45vw;
     }
 
 
@@ -572,7 +617,6 @@ footer {
 
 
     /*---------------     Footer     ---------------*/
-
     footer .row {
         justify-content: space-between;
     }
@@ -581,7 +625,7 @@ footer {
         margin: 0;
     
     }
-
+    
     footer .f-right {
         float: right;
     }
@@ -591,5 +635,5 @@ footer {
         padding: 20px 0; 
         margin: 0;  
     }
-
 }
+

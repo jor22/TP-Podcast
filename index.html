@@ -12,11 +12,11 @@
     </head>
     <body>
       <header>
-            <nav>
-                <div class="container  desktop-small-container">
-                    <div class="row">
+            <div class="container  desktop-small-container">
+                <div class="row">
+                    <nav>
                         <div class="col-1 d-col-1 ">
-                            <img src="./images/logo.svg" alt="" class="img-fluid logo" />
+                            <img src="./images/logo.svg" alt="logo" class="img-fluid logo" />
                         </div>
 
                         <input type="checkbox" name="" id="menu-toggle" />
@@ -28,16 +28,19 @@
                             </label>
                         </div>
 
-                        <div class="col-12 menu d-col-11 desktop-menu   ">
-                            <ul >
-                                <li>EPISODIOS </li>
-                                <li>NOSOTROS </li>
-                                <li>ENTREVISTAS</li>
-                                <li>TÓPICOS </li>
+                        <div class="col-12 menu  d-col-11 desktop-menu">
+                            <ul>
+                                <li><a  href="#episodios">EPISODIOS</a></li>
+                                <li><a  href="#nosotros">NOSOTROS</a></li>
+                                <li><a  href="#invitadas">ENTREVISTAS</a></li>
+                                <li><a  href="#temas">TÓPICOS</a></li>
                             </ul>
                         </div>
+                   </nav>
+                   
+                 <!--------------------  nav-End  ---------------->
 
-                     <div class="col-12  desktop-container">
+                    <div class="col-12  desktop-container">
                         <h1>
                             Hello <span class="line-througth">World</span> <br>
                             pale blue dot <span class="point-color">.</span>
@@ -46,82 +49,71 @@
                             Un podcast que explora el mundo de la programación. Nuevos episodios, todos los jueves cada 15 días.
                         </p >
                         <p class= "desktop-p" >
-                            El portal de podcasts que explora el mundo de la programación y<br>la tecnología. Nuevos episodios, todos los jueves cada 15 días.
+                                El portal de podcasts que explora el mundo de la programación y<br>la tecnología. Nuevos episodios, todos los jueves cada 15 días.
                         </p>
 
-
-                        <button  class="header-btn"> 
-                            CONOCÉ  MÁS
-                        </button>
+                        <div class="btn">
+                            <a href="#phone">CONOCÉ MÁS</a>
+                        </div>
                     </div>
                 </div>
-                </div>
-            </nav>     
+            </div>
      </header>
 
      <!--------------------  Header-End  ---------------->
 
         <main>
-            <section class="episodios ">
+            <section  id="episodios">
                 <div class= "container-fluid     clipped-background  ">
                     <div class="desktop-container">
                        <h2>Episodios</h2>
                     </div>
                     <div  class="row  embed-container ">
                         <div class=" responsive-iframe  embed-width  embed-left">
-                            <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"  max-width="100%"
-                            width="100%"
-                            height="232"
-                             frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            <iframe src="https://open.spotify.com/embed-podcast/show/2ySVrxGkN6n6frMTo9Nsrt"  
+                            ></iframe>
                         </div>
                         <div class="responsive-iframe  embed-width  embed-right">
-                            <iframe clas="margin-iframe"src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby"    max-width="100%"
-                            width="100%"
-                            height="232"
-                             frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            <iframe src="https://open.spotify.com/embed-podcast/show/4kYCRYJ3yK5DQbP5tbfZby" 
+                             allowtransparency="true" allow="encrypted-media"></iframe>
                         </div>
                         <div class=" responsive-iframe embed-width  embed-left">
-                            <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" max-width="100%"
-                            width="100%"
-                            height="232"
-                             frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                            <iframe src="https://open.spotify.com/embed-podcast/show/5JxcIaIkN8zx3Zy7yD9snv" 
+                              allowtransparency="true" allow="encrypted-media"></iframe>
                         </div>
                         <div class=" responsive-iframe embed-width  embed-right">
-                            <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"           max-width="100%"
-                            width="100%"
-                             height="232"
-                             frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe> 
+                            <iframe src="https://open.spotify.com/embed-podcast/show/2Iibd5A6R7mxkCm4NwNmUn"           
+                           allowtransparency="true" allow="encrypted-media"></iframe> 
                         </div> 
                     </div> 
                 </div>
             </section>
             
-     <!--------------------  Section-End  ------------------->
-
-            <section class="donde-venimos ">
-                <div class= "row  desktop-container " >
+            <!----------------  Section-End  --------------->
+            
+            <section class="donde-venimos" id="donde-venimos">
+                <div class= "row  desktop-container"  >
                     <div class="phone-container d-col-6 ">
-                    <div class="col-10 phone">
-                         <img src="images/phone.png" alt=""  class="img-fluid desktop-img-fluid">
-                     </div>
+                        <div class="col-8 phone">
+                            <img src="images/phone.png" alt="phone"  class="img-fluid desktop-img-fluid" id="phone">
+                        </div>
                     </div >
-                    <div class="container  d-col-6">
-                    <h3>
-                        De dónde <br>venimos
-                    </h3>
-                    <p>
-                        Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.<br>
-                        <br>
-                        Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
-                    </p>
-                   
+                    <div class="container  d-col-6" >
+                        <h3 id="nosotros">
+                            De dónde <br>venimos
+                        </h3>
+                        <p>
+                            Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.<br>
+                            <br>
+                            Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.
+                        </p>
                     </div>
                 </div>
             </section>
 
-     <!--------------------  Section-End  ------------------->
+            <!----------------  Section-End  --------------->
 
-            <section class="invitadas">
+            <section class="invitadas" id="invitadas">
                 <Div class="container desktop-container">
                     <h3>
                         Invitadas/os<br> estelares
@@ -133,18 +125,18 @@
                     alt="Katie-Bouman"
                     class="invitadas-images d-col-4 ">
                     <img src="images/Margaret_Hamilton.png" alt="Margaret_Hamilton"class="invitadas-images d-col-4">
-                    <img src="images/An E.R.A.Univac 1103 computer in the 1950s.png" alt="Computer 1950" class="invitadas-images d-col-4">
-                    <img src="images/Computer operators with an Eniac ÔÇö the worldÔÇÖs first programmable general-purpose computer.png" alt="computer operators" class="invitadas-images d-col-4">
+                    <img src="images/An_E.R.A.Univac_1103_computer_in_the_1950s.png" alt="Computer 1950" class="invitadas-images d-col-4">
+                    <img src="images/Computer_operators_with_an_Eniac_the_worldfirst_programmable_general_purpose_computer.png" alt="computer operators" class="invitadas-images d-col-4">
                     <img src="images/susan-kare.png" alt="susan-kare" class="invitadas-images d-col-4">
                 </div>
             </section>
 
-     <!--------------------  Section-End  ------------------->
+         <!----------------  Section-End  --------------->
 
-            <section class="temas">
+            <section class="temas" id="temas">
                 <div class="container ">
                     <h3 class="desktop-container">
-                        Algunos de<br>nuestros temas 
+                        Algunos de <br>nuestros temas 
                     </h3>
                     <div class="row   desktop-container">
 
@@ -173,40 +165,76 @@
                 </div >
             </section>
 
-     <!--------------------  Section-End  ------------------->
+            <!----------------  Section-End  --------------->
 
-            <section class="novedades">
+            <section class="novedades" id="novedades">
                 <div class= "container-fluid">
                     <div class="container">
                         <h2>
                             ¿Querés las últimas novedades?
                         </h2>
-                        <button  class="end-btn"> 
-                            ESCUCHÁ LOS EPISODIOS
-                        </button>
+                        <div class="btn">
+                            <a href="#episodios">ESCUCHÁ LOS EPISODIOS</a>
+                        </div>
                     </div>
                 </div>
             </section>
 
-     <!-------------------- Section-End  ------------------->
+            <!----------------  Section-End  --------------->
 
         </main>
 
         <footer> 
             <div class="container desktop-small-container row">
-                <p> © 2019— Hello blue pale dot </p>
-                <div class=" col-12 d-col-4
-                 social-icons-container">
-                    <i class="fa fa-spotify col-2 d-col-1 f-right" aria-hidden="true"></i>
-                    <i class="fa fa-instagram col-2 d-col-1 f-right" aria-hidden="true"></i>
-                    <i class="fa fa-twitter col-2 d-col-1 f-right " aria-hidden="true"></i>
-                    <i class="fa fa-facebook col-2 d-col-1 f-right" aria-hidden="true"></i>
-                    <i class="fa fa-paper-plane col-2 d-col-1 f-right" aria-hidden="true"></i>
+                <div class="col-12">
+                    <p> © 2019— Hello blue pale dot </p>
+                </div>
+
+                <div class=" col-12 d-col-3 social-icons-container">    
+                    <ul> 
+                    <li class="col-2 d-col-1">
+
+
+                            <a href="https://www.spotify.com/" target="_blank">
+                                <i class="fa fa-spotify" aria-hidden="true"></i>
+                            </a>
+                        
+                    </li>
+
+                    <li  class="col-2 d-col-1">
+                       
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <i class="fa fa-instagram" aria-hidden="true"></i>
+                            </a>
+                        
+                    </li>
+
+                    <li  class="col-2 d-col-1">
+                        
+                            <a href="https://www.twitter.com/" target="_blank">
+                                <i class="fa fa-twitter" aria-hidden="true"></i>
+                            </a>
+                
+                    </li>
+
+                    <li  class="col-2 d-col-1" >
+                        
+                            <a href="https://www.facebook.com/" target="_blank">
+                                <i class="fa fa-facebook" aria-hidden="true"></i>
+                            </a>
+                    </li>
+
+                    <li  class="col-2 d-col-1">
+                    
+                        <a href="https://www.telegram.com/" target="_blank">
+                            <i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        </a>
+                        
+                    </li>
+                    </ul>         
                 </div>
             </div>
         </footer>
-
-    <!--------------------  Footer-End  ------------------->
-
+     <!-----------------  Footer-End  ------------------->
     </body>
 </html>
